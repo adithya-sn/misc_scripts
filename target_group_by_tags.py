@@ -5,8 +5,8 @@ from jsonpath_rw import jsonpath, parse
 import boto3
 from vars import *
 print(AWS_ACCESS_KEY_ID)
-'''
-client = boto3.client('resourcegroupstaggingapi', region_name='ap-southeast-1')
+
+client = boto3.client('resourcegroupstaggingapi', region_name='us-east-1', aws_access_key_id=ACCESS_KEY, aws_secret_access_key=SECRET_KEY)
 
 response = client.get_resources(
     TagFilters=[
@@ -48,4 +48,3 @@ if notg > 1:
     z = z+2
 else:
   print(result[1])
-'''
