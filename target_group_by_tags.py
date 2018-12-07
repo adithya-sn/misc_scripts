@@ -3,7 +3,7 @@
 import sys
 from jsonpath_rw import jsonpath, parse
 import boto3
-from var import *
+from vars import *
 print(AWS_ACCESS_KEY_ID)
 '''
 client = boto3.client('resourcegroupstaggingapi', region_name='ap-southeast-1')
