@@ -3,8 +3,9 @@
 import sys
 from jsonpath_rw import jsonpath, parse
 import boto3
-#from vars import *
-
+from var import *
+print(AWS_ACCESS_KEY_ID)
+'''
 client = boto3.client('resourcegroupstaggingapi', region_name='ap-southeast-1')
 
 response = client.get_resources(
@@ -47,3 +48,4 @@ if notg > 1:
     z = z+2
 else:
   print(result[1])
+'''
