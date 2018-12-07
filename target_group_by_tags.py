@@ -32,10 +32,10 @@ j_response = [match.value for match in jpath.find(response)]
 tmp1=str(j_response).lstrip("[\'u\'").rstrip("\']'")
 
 tmp2 = tmp1.split(':')
-notg = tmp2.count('aws')
+no_of_tg = tmp2.count('aws')
 result = str(tmp2).split('/')
 
 z = 1
-while z < (notg*2)+1:
+while z < (no_of_tg*2)+1:
     print(result[z])
     z = z+2
