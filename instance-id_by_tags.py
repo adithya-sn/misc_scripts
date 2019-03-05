@@ -5,7 +5,7 @@ from jsonpath_rw import jsonpath, parse
 import jsonpath
 import boto3
 import json
-vm = []
+
 client = boto3.client('resourcegroupstaggingapi', region_name='ap-southeast-1')
 
 response = client.get_resources(
